@@ -1,0 +1,35 @@
+Debugger attached.
+Debugger attached.
+Debugger attached.
+Using pvtKey deployer with address:  0x9AB9d96F6f4783c66A9769d85D7B3aFB5c38FAb3
+Verifier already deployed on:  0x3e9077c0dc2e99C02704fd7779CABD2Ba5E273Ef
+#######################
+
+Proxy admin deployed to: 0x170eFC5D1e9A3436Ab16AC76890BD34Aa91B2B44
+#######################
+
+bridge impl deployed to: 0xAFA0930fD02649aB28Fb67DBE2C7fa3814B38e6b
+#######################
+
+PolygonZkEVMBridge deployed to: 0x31fF1E19E459FF3B7a36110dF151dBF657CbCfDa
+
+#######################
+#####    Checks PolygonZkEVMBridge   #####
+#######################
+PolygonZkEVMGlobalExitRootAddress: 0x0A9059609AAd885Eeb723853dC187C6074384Eda
+networkID: 0
+supernets2address: 0x7C52F148B88B1aD1027721D7E4058A356454abeA
+Warning: Imported proxy with admin at '0x170eFC5D1e9A3436Ab16AC76890BD34Aa91B2B44' which differs from previously deployed admin '0x171f9Dc67742E2881d68396a9DdC1AE24efb4957'
+
+    The imported proxy admin is different from the proxy admin that was previously deployed on this network. This proxy will not be upgradable directly by the plugin.
+    To upgrade this proxy, use the prepareUpgrade or defender.proposeUpgrade function and then upgrade it using the admin at '0x170eFC5D1e9A3436Ab16AC76890BD34Aa91B2B44'.
+
+#######################
+
+supernets2DataCommittee deployed to: 0xA7fa301e07af079284ca0BD3ae448Aef4d2EB18d
+Empty committee seted up
+TypeError: Cannot read properties of undefined (reading 'address')
+    at main (/Users/ivan/projects/blockchain/supernets2-contracts/deployment/3_deployContracts.js:357:90)
+Waiting for the debugger to disconnect...
+Waiting for the debugger to disconnect...
+Waiting for the debugger to disconnect...

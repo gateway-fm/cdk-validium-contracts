@@ -1,0 +1,9 @@
+Debugger attached.
+Debugger attached.
+Debugger attached.
+#######################
+
+supernets2Deployer deployed on:  0xdf7155353fC27453bf23De53177ec0AF09539FEf
+Waiting for the debugger to disconnect...
+Waiting for the debugger to disconnect...
+Waiting for the debugger to disconnect...
