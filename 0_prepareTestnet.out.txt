@@ -1,0 +1,4 @@
+Using MNEMONIC deployer with address:  0xd494D855ce4B06074699be6D5968d2a624ED46E6
+#######################
+
+Matic deployed to: 0x7c13227842b3E6B178a13F08904620DeC4585f4b

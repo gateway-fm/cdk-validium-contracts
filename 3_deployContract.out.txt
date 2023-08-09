@@ -1,0 +1,104 @@
+Using MNEMONIC deployer with address:  0xd494D855ce4B06074699be6D5968d2a624ED46E6
+#######################
+
+Verifier deployed to: 0xa89eF097d13cA80F4D1E98fa56ae4CD4fC542cdC
+#######################
+
+Proxy admin deployed to: 0xDdEE897C0fAEdC096E35b37670A68eB0eD691560
+#######################
+
+bridge impl deployed to: 0x235702DaCce28f3dE47f9496D58F41D5e128f962
+#######################
+
+PolygonZkEVMBridge deployed to: 0xD67ABcc6453CBef0e14544E7c32710d0fA172581
+
+#######################
+#####    Checks PolygonZkEVMBridge   #####
+#######################
+PolygonZkEVMGlobalExitRootAddress: 0x3Be197eb0d2C731bF66A4C21Fe0B5B10F135E2ae
+networkID: 0
+supernets2address: 0x8c1E37adc212599e26a124B556fDF441139Df7c2
+#######################
+
+supernets2DataCommittee deployed to: 0xFd134a5fA91ed47873f5CF8fB24a92097AcF6616
+Empty committee seted up
+Warning: Potentially unsafe deployment of contracts/PolygonZkEVMGlobalExitRoot.sol:PolygonZkEVMGlobalExitRoot
+
+    You are using the `unsafeAllow.state-variable-immutable` flag.
+
+Warning: Potentially unsafe deployment of contracts/PolygonZkEVMGlobalExitRoot.sol:PolygonZkEVMGlobalExitRoot
+
+    You are using the `unsafeAllow.constructor` flag.
+
+#######################
+
+PolygonZkEVMGlobalExitRoot deployed to: 0x3Be197eb0d2C731bF66A4C21Fe0B5B10F135E2ae
+
+#######################
+##### Deployment Supernets2 #####
+#######################
+deployer: 0xd494D855ce4B06074699be6D5968d2a624ED46E6
+PolygonZkEVMGlobalExitRootAddress: 0x3Be197eb0d2C731bF66A4C21Fe0B5B10F135E2ae
+maticTokenAddress: 0x7c13227842b3E6B178a13F08904620DeC4585f4b
+verifierAddress: 0xa89eF097d13cA80F4D1E98fa56ae4CD4fC542cdC
+PolygonZkEVMBridgeContract: 0xD67ABcc6453CBef0e14544E7c32710d0fA172581
+admin: 0x0a8E9bFC539490707Ba194eC6c45c2cc93B58E22
+chainID: 686669576
+trustedSequencer: 0x9AB9d96F6f4783c66A9769d85D7B3aFB5c38FAb3
+pendingStateTimeout: 604799
+trustedAggregator: 0x39EA2b0714ABCbd8A14Fe7C4c25F89777Da25Ec7
+trustedAggregatorTimeout: 604799
+genesisRoot: 0x4fa396caaa3b633853fc738b2f9545f1e0cdf21a4ce83f919aaed2f921ec37d6
+trustedSequencerURL: http://sn2-stavanger-sequencer.service.consul:8123
+networkName: sn2-stavanger
+forkID: 5
+Warning: Potentially unsafe deployment of contracts/Supernets2.sol:Supernets2
+
+    You are using the `unsafeAllow.state-variable-immutable` flag.
+
+Warning: Potentially unsafe deployment of contracts/Supernets2.sol:Supernets2
+
+    You are using the `unsafeAllow.constructor` flag.
+
+#######################
+
+supernets2Contract deployed to: 0x8c1E37adc212599e26a124B556fDF441139Df7c2
+
+#######################
+#####    Checks  Supernets2  #####
+#######################
+PolygonZkEVMGlobalExitRootAddress: 0x3Be197eb0d2C731bF66A4C21Fe0B5B10F135E2ae
+maticTokenAddress: 0x7c13227842b3E6B178a13F08904620DeC4585f4b
+verifierAddress: 0xa89eF097d13cA80F4D1E98fa56ae4CD4fC542cdC
+PolygonZkEVMBridgeContract: 0xD67ABcc6453CBef0e14544E7c32710d0fA172581
+admin: 0x0a8E9bFC539490707Ba194eC6c45c2cc93B58E22
+chainID: BigNumber { value: "686669576" }
+trustedSequencer: 0x9AB9d96F6f4783c66A9769d85D7B3aFB5c38FAb3
+pendingStateTimeout: BigNumber { value: "604799" }
+trustedAggregator: 0x39EA2b0714ABCbd8A14Fe7C4c25F89777Da25Ec7
+trustedAggregatorTimeout: BigNumber { value: "604799" }
+genesiRoot: 0x4fa396caaa3b633853fc738b2f9545f1e0cdf21a4ce83f919aaed2f921ec37d6
+trustedSequencerURL: http://sn2-stavanger-sequencer.service.consul:8123
+networkName: sn2-stavanger
+owner: 0x0a8E9bFC539490707Ba194eC6c45c2cc93B58E22
+forkID: BigNumber { value: "5" }
+
+#######################
+##### Deployment TimelockContract  #####
+#######################
+minDelayTimelock: 3600
+timelockAddress: 0x6313BD008b4EA5a4928bf267210E777d48bC9185
+supernets2Address: 0x8c1E37adc212599e26a124B556fDF441139Df7c2
+#######################
+
+Polygon timelockContract deployed to: 0x0af5C66128d7cf0FB8AE2F36b84e43B1626Ed463
+✔ 0xD67ABcc6453CBef0e14544E7c32710d0fA172581 (transparent) proxy ownership transfered through admin proxy
+✔ 0xFd134a5fA91ed47873f5CF8fB24a92097AcF6616 (transparent) proxy ownership transfered through admin proxy
+✔ 0x3Be197eb0d2C731bF66A4C21Fe0B5B10F135E2ae (transparent) proxy ownership transfered through admin proxy
+✔ 0x8c1E37adc212599e26a124B556fDF441139Df7c2 (transparent) proxy ownership transfered through admin proxy
+
+#######################
+#####  Checks TimelockContract  #####
+#######################
+minDelayTimelock: BigNumber { value: "3600" }
+supernets2: 0x8c1E37adc212599e26a124B556fDF441139Df7c2
