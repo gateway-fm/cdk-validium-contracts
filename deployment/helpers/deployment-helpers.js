@@ -17,7 +17,6 @@ async function deploySupernets2Deployer(deployerAddress, signer) {
     const to = '0x'; // bc deployment transaction, "to" is "0x"
     const tx = {
         to,
-        chainId: await signer.getChainId(),
         nonce: 0,
         value: 0,
         gasLimit: gasLimit.toHexString(),
