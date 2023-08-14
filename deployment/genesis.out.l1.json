@@ -109,5 +109,13 @@
       "nonce": "0",
       "address": "0xde6BF0bf8AF48162a0dB3a51519092ddEd385fC0"
     }
-  ]
+  ],
+  "L1Config": {
+    "chainId": 10200,
+    "maticTokenAddress": "0x55f5621186d6E682381D9837f8B9aCFADEf23f80",
+    "supernets2Address": "0x7D39613b548eB0708841D8fb1D12Fb7a47cE9C5d",
+    "supernets2DataCommitteeContract": "0x4Cc405bd36196F364cE5Db07E70F01d1493b5C6d",
+    "supernets2GlobalExitRootAddress": "0x302a80f039ae484492e0f9eE9F03528bd63906ec"
+  },
+  "genesisBlockNumber": 5417074
 }

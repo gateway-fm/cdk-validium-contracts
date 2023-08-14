@@ -1,35 +1,104 @@
-Debugger attached.
-Debugger attached.
-Debugger attached.
-Using pvtKey deployer with address:  0x9AB9d96F6f4783c66A9769d85D7B3aFB5c38FAb3
-Verifier already deployed on:  0x3e9077c0dc2e99C02704fd7779CABD2Ba5E273Ef
+Using MNEMONIC deployer with address:  0x4Ae24Ba3A4A6253597bef8569643392246A5Dc5c
 #######################
 
-Proxy admin deployed to: 0x170eFC5D1e9A3436Ab16AC76890BD34Aa91B2B44
+Verifier deployed to: 0x623734c9BA0c3966a5eEc604c5cbD4df963Ba09e
 #######################
 
-bridge impl deployed to: 0xAFA0930fD02649aB28Fb67DBE2C7fa3814B38e6b
+Proxy admin deployed to: 0xCE5a34D0628FC9C7971F7d9aA384f4B7Ab1433Ad
 #######################
 
-PolygonZkEVMBridge deployed to: 0x31fF1E19E459FF3B7a36110dF151dBF657CbCfDa
+bridge impl deployed to: 0xe790f5CF244e14F74475a829E8bbBec0dB35a6d3
+#######################
+
+PolygonZkEVMBridge deployed to: 0xc7804A6D7Fb204d66e764eA9dA84f45d7Ce0CC59
 
 #######################
 #####    Checks PolygonZkEVMBridge   #####
 #######################
-PolygonZkEVMGlobalExitRootAddress: 0x0A9059609AAd885Eeb723853dC187C6074384Eda
+PolygonZkEVMGlobalExitRootAddress: 0x302a80f039ae484492e0f9eE9F03528bd63906ec
 networkID: 0
-supernets2address: 0x7C52F148B88B1aD1027721D7E4058A356454abeA
-Warning: Imported proxy with admin at '0x170eFC5D1e9A3436Ab16AC76890BD34Aa91B2B44' which differs from previously deployed admin '0x171f9Dc67742E2881d68396a9DdC1AE24efb4957'
+supernets2address: 0x7D39613b548eB0708841D8fb1D12Fb7a47cE9C5d
+#######################
 
-    The imported proxy admin is different from the proxy admin that was previously deployed on this network. This proxy will not be upgradable directly by the plugin.
-    To upgrade this proxy, use the prepareUpgrade or defender.proposeUpgrade function and then upgrade it using the admin at '0x170eFC5D1e9A3436Ab16AC76890BD34Aa91B2B44'.
+supernets2DataCommittee deployed to: 0x4Cc405bd36196F364cE5Db07E70F01d1493b5C6d
+Empty committee seted up
+Warning: Potentially unsafe deployment of contracts/PolygonZkEVMGlobalExitRoot.sol:PolygonZkEVMGlobalExitRoot
+
+    You are using the `unsafeAllow.state-variable-immutable` flag.
+
+Warning: Potentially unsafe deployment of contracts/PolygonZkEVMGlobalExitRoot.sol:PolygonZkEVMGlobalExitRoot
+
+    You are using the `unsafeAllow.constructor` flag.
 
 #######################
 
-supernets2DataCommittee deployed to: 0xA7fa301e07af079284ca0BD3ae448Aef4d2EB18d
-Empty committee seted up
-TypeError: Cannot read properties of undefined (reading 'address')
-    at main (/Users/ivan/projects/blockchain/supernets2-contracts/deployment/3_deployContracts.js:357:90)
-Waiting for the debugger to disconnect...
-Waiting for the debugger to disconnect...
-Waiting for the debugger to disconnect...
+PolygonZkEVMGlobalExitRoot deployed to: 0x302a80f039ae484492e0f9eE9F03528bd63906ec
+
+#######################
+##### Deployment Supernets2 #####
+#######################
+deployer: 0x4Ae24Ba3A4A6253597bef8569643392246A5Dc5c
+PolygonZkEVMGlobalExitRootAddress: 0x302a80f039ae484492e0f9eE9F03528bd63906ec
+maticTokenAddress: 0x55f5621186d6E682381D9837f8B9aCFADEf23f80
+verifierAddress: 0x623734c9BA0c3966a5eEc604c5cbD4df963Ba09e
+PolygonZkEVMBridgeContract: 0xc7804A6D7Fb204d66e764eA9dA84f45d7Ce0CC59
+admin: 0x0a8E9bFC539490707Ba194eC6c45c2cc93B58E22
+chainID: 686669576
+trustedSequencer: 0x9AB9d96F6f4783c66A9769d85D7B3aFB5c38FAb3
+pendingStateTimeout: 604799
+trustedAggregator: 0x39EA2b0714ABCbd8A14Fe7C4c25F89777Da25Ec7
+trustedAggregatorTimeout: 604799
+genesisRoot: 0xfb6ef819433935ea7c0a8da58c9dc1ae8b952801979e8cf1581b622403dd5708
+trustedSequencerURL: http://sn2-stavanger-sequencer.service.consul:8123
+networkName: sn2-stavanger
+forkID: 5
+Warning: Potentially unsafe deployment of contracts/Supernets2.sol:Supernets2
+
+    You are using the `unsafeAllow.state-variable-immutable` flag.
+
+Warning: Potentially unsafe deployment of contracts/Supernets2.sol:Supernets2
+
+    You are using the `unsafeAllow.constructor` flag.
+
+#######################
+
+supernets2Contract deployed to: 0x7D39613b548eB0708841D8fb1D12Fb7a47cE9C5d
+
+#######################
+#####    Checks  Supernets2  #####
+#######################
+PolygonZkEVMGlobalExitRootAddress: 0x302a80f039ae484492e0f9eE9F03528bd63906ec
+maticTokenAddress: 0x55f5621186d6E682381D9837f8B9aCFADEf23f80
+verifierAddress: 0x623734c9BA0c3966a5eEc604c5cbD4df963Ba09e
+PolygonZkEVMBridgeContract: 0xc7804A6D7Fb204d66e764eA9dA84f45d7Ce0CC59
+admin: 0x0a8E9bFC539490707Ba194eC6c45c2cc93B58E22
+chainID: BigNumber { value: "686669576" }
+trustedSequencer: 0x9AB9d96F6f4783c66A9769d85D7B3aFB5c38FAb3
+pendingStateTimeout: BigNumber { value: "604799" }
+trustedAggregator: 0x39EA2b0714ABCbd8A14Fe7C4c25F89777Da25Ec7
+trustedAggregatorTimeout: BigNumber { value: "604799" }
+genesiRoot: 0xfb6ef819433935ea7c0a8da58c9dc1ae8b952801979e8cf1581b622403dd5708
+trustedSequencerURL: http://sn2-stavanger-sequencer.service.consul:8123
+networkName: sn2-stavanger
+owner: 0x0a8E9bFC539490707Ba194eC6c45c2cc93B58E22
+forkID: BigNumber { value: "5" }
+
+#######################
+##### Deployment TimelockContract  #####
+#######################
+minDelayTimelock: 3600
+timelockAddress: 0x6313BD008b4EA5a4928bf267210E777d48bC9185
+supernets2Address: 0x7D39613b548eB0708841D8fb1D12Fb7a47cE9C5d
+#######################
+
+Polygon timelockContract deployed to: 0xC68312871A531A8D2fed1ce5602d68474c14d5AE
+✔ 0xc7804A6D7Fb204d66e764eA9dA84f45d7Ce0CC59 (transparent) proxy ownership transfered through admin proxy
+✔ 0x4Cc405bd36196F364cE5Db07E70F01d1493b5C6d (transparent) proxy ownership transfered through admin proxy
+✔ 0x302a80f039ae484492e0f9eE9F03528bd63906ec (transparent) proxy ownership transfered through admin proxy
+✔ 0x7D39613b548eB0708841D8fb1D12Fb7a47cE9C5d (transparent) proxy ownership transfered through admin proxy
+
+#######################
+#####  Checks TimelockContract  #####
+#######################
+minDelayTimelock: BigNumber { value: "3600" }
+supernets2: 0x7D39613b548eB0708841D8fb1D12Fb7a47cE9C5d

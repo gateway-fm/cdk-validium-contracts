@@ -1,4 +1,3 @@
-Debugger attached.
 Warning: Potentially unsafe deployment of contracts/PolygonZkEVMGlobalExitRootL2.sol:PolygonZkEVMGlobalExitRootL2
 
     You are using the `unsafeAllow.state-variable-immutable` flag.
@@ -7,4 +6,3 @@ Warning: Potentially unsafe deployment of contracts/PolygonZkEVMGlobalExitRootL2
 
     You are using the `unsafeAllow.constructor` flag.
 
-Waiting for the debugger to disconnect...
