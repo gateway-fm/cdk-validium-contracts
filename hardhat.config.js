@@ -153,9 +153,18 @@ module.exports = {
       // supernets2Mainnet: `${process.env.ETHERSCAN_ZKEVM_API_KEY}`,
       goerli: `${process.env.ETHERSCAN_API_KEY}`,
       sepolia: `${process.env.ETHERSCAN_API_KEY}`,
-      mainnet: `${process.env.ETHERSCAN_API_KEY}`
+      mainnet: `${process.env.ETHERSCAN_API_KEY}`,
+      chiado: `${process.env.ETHERSCAN_API_KEY}`
     },
     customChains: [
+      {
+        network: "chiado",
+        chainId: 10200,
+        urls: {
+          apiURL: "https://gnosis-chiado.blockscout.com/api",
+          browserURL: "https://gnosis-chiado.blockscout.com/"
+        }
+      },
       // {
       //   network: "supernets2Mainnet",
       //   chainId: 1101,

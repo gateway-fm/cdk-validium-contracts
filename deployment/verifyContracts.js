@@ -89,10 +89,10 @@ async function main() {
             {
                 address: deployOutputParameters.supernets2Address,
                 constructorArguments: [
-                    deployOutputParameters.PolygonZkEVMGlobalExitRootAddress,
+                    deployOutputParameters.polygonZkEVMGlobalExitRootAddress,
                     deployOutputParameters.maticTokenAddress,
                     deployOutputParameters.verifierAddress,
-                    deployOutputParameters.PolygonZkEVMBridgeAddress,
+                    deployOutputParameters.polygonZkEVMBridgeAddress,
                     deployOutputParameters.supernets2DataCommitteeContract,
                     deployOutputParameters.chainID,
                     deployOutputParameters.forkID,
@@ -100,7 +100,7 @@ async function main() {
             },
         );
     } catch (error) {
-        expect(error.message.toLowerCase().includes('proxyadmin')).to.be.equal(true);
+        expect(error.message.toLowerCase()).to.contain.oneOf(['proxyadmin', 'unknown action']);
     }
 
     // verify global exit root address
@@ -108,26 +108,26 @@ async function main() {
         await hre.run(
             'verify:verify',
             {
-                address: deployOutputParameters.PolygonZkEVMGlobalExitRootAddress,
+                address: deployOutputParameters.polygonZkEVMGlobalExitRootAddress,
                 constructorArguments: [
                     deployOutputParameters.supernets2Address,
-                    deployOutputParameters.PolygonZkEVMBridgeAddress,
+                    deployOutputParameters.polygonZkEVMBridgeAddress,
                 ],
             },
         );
     } catch (error) {
-        expect(error.message.toLowerCase().includes('proxyadmin')).to.be.equal(true);
+        expect(error.message.toLowerCase()).to.contain.oneOf(['proxyadmin', 'unknown action']);
     }
 
     try {
         await hre.run(
             'verify:verify',
             {
-                address: deployOutputParameters.PolygonZkEVMBridgeAddress,
+                address: deployOutputParameters.polygonZkEVMBridgeAddress,
             },
         );
     } catch (error) {
-        expect(error.message.toLowerCase().includes('proxyadmin')).to.be.equal(true);
+        expect(error.message.toLowerCase()).to.contain.oneOf(['proxyadmin', 'unknown action']);
     }
 }
 
