@@ -89,10 +89,10 @@ async function main() {
             {
                 address: deployOutputParameters.cdkValidiumAddress,
                 constructorArguments: [
-                    deployOutputParameters.PolygonZkEVMGlobalExitRootAddress,
+                    deployOutputParameters.polygonZkEVMGlobalExitRootAddress,
                     deployOutputParameters.maticTokenAddress,
                     deployOutputParameters.verifierAddress,
-                    deployOutputParameters.PolygonZkEVMBridgeAddress,
+                    deployOutputParameters.polygonZkEVMBridgeAddress,
                     deployOutputParameters.cdkDataCommitteeContract,
                     deployOutputParameters.chainID,
                     deployOutputParameters.forkID,
@@ -100,7 +100,12 @@ async function main() {
             },
         );
     } catch (error) {
-        expect(error.message.toLowerCase().includes('proxyadmin')).to.be.equal(true);
+        if (hre.hardhatArguments.network === "sn2") {
+            // because blockscout api don't support some methods for proxy verifications
+            expect(error.message.toLowerCase().includes('unknown action')).to.be.equal(true);
+        } else {
+            expect(error.message.toLowerCase().includes('proxyadmin')).to.be.equal(true);
+        }
     }
 
     // verify global exit root address
@@ -108,26 +113,36 @@ async function main() {
         await hre.run(
             'verify:verify',
             {
-                address: deployOutputParameters.PolygonZkEVMGlobalExitRootAddress,
+                address: deployOutputParameters.polygonZkEVMGlobalExitRootAddress,
                 constructorArguments: [
                     deployOutputParameters.cdkValidiumAddress,
-                    deployOutputParameters.PolygonZkEVMBridgeAddress,
+                    deployOutputParameters.polygonZkEVMBridgeAddress,
                 ],
             },
         );
     } catch (error) {
-        expect(error.message.toLowerCase().includes('proxyadmin')).to.be.equal(true);
+        if (hre.hardhatArguments.network === "sn2") {
+            // because blockscout api don't support some methods for proxy verifications
+            expect(error.message.toLowerCase().includes('unknown action')).to.be.equal(true);
+        } else {
+            expect(error.message.toLowerCase().includes('proxyadmin')).to.be.equal(true);
+        }
     }
 
     try {
         await hre.run(
             'verify:verify',
             {
-                address: deployOutputParameters.PolygonZkEVMBridgeAddress,
+                address: deployOutputParameters.polygonZkEVMBridgeAddress,
             },
         );
     } catch (error) {
-        expect(error.message.toLowerCase().includes('proxyadmin')).to.be.equal(true);
+        if (hre.hardhatArguments.network === "sn2") {
+            // we don't upgrade or change admin for this proxy
+            expect(error.message.toLowerCase().includes('adminchanged')).to.be.equal(true);
+        } else {
+            expect(error.message.toLowerCase().includes('proxyadmin')).to.be.equal(true);
+        }
     }
 }
 

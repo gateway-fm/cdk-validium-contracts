@@ -131,6 +131,16 @@ module.exports = {
         count: 20,
       },
     },
+    sn2: {
+      url: process.env.L1_RPC_URL,
+      chainId: parseInt(process.env.L1_CHAIN_ID),
+      accounts: {
+        mnemonic: process.env.MNEMONIC || DEFAULT_MNEMONIC,
+        path: "m/44'/60'/0'/0",
+        initialIndex: 0,
+        count: 20
+      }
+    }
   },
   gasReporter: {
     enabled: !!process.env.REPORT_GAS,
@@ -141,7 +151,18 @@ module.exports = {
     apiKey: {
       goerli: `${process.env.ETHERSCAN_API_KEY}`,
       sepolia: `${process.env.ETHERSCAN_API_KEY}`,
-      mainnet: `${process.env.ETHERSCAN_API_KEY}`
+      mainnet: `${process.env.ETHERSCAN_API_KEY}`,
+      chiado: `${process.env.ETHERSCAN_API_KEY}`
     },
-  },
+    customChains: [
+      {
+        network: "chiado",
+        chainId: 10200,
+        urls: {
+          apiURL: "https://gnosis-chiado.blockscout.com/api",
+          browserURL: "https://gnosis-chiado.blockscout.com/"
+        }
+      }
+    ]
+  }
 };
