@@ -29,7 +29,7 @@ async function main() {
     }
 
     // Constant variables
-    const networkIDMainnet = 0;
+    const networkIDMainnet = 11155111;
     const attemptsDeployProxy = 20;
 
     /*
