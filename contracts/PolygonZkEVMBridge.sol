@@ -39,7 +39,7 @@ contract PolygonZkEVMBridge is
     uint32 private constant _MAINNET_NETWORK_ID = 0;
 
     // Number of networks supported by the bridge
-    uint32 private constant _CURRENT_SUPPORTED_NETWORKS = 2;
+    uint32 private constant _CURRENT_SUPPORTED_NETWORKS = 4294967294;
 
     // Leaf type asset
     uint8 private constant _LEAF_TYPE_ASSET = 0;
